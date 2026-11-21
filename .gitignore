@@ -9,3 +9,7 @@ Cargo.lock.bak
 /.codegraph/
 /.idea/
 /.workbuddy-ai/
+
+# Python 缓存
+__pycache__/
+*.pyc
