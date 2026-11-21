@@ -34,3 +34,6 @@ Thumbs.db
 # 本地运行时产物（ACE 证据/请求不随仓分发）
 /.ace-*/
 /requests/
+
+# 内部设计记录（不入库、不分发；本地保留）
+/docs/internal/
