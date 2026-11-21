@@ -13,3 +13,24 @@ Cargo.lock.bak
 # Python 缓存
 __pycache__/
 *.pyc
+
+# 构建与剖析产物
+*.profraw
+*.profdata
+perf.data*
+*.dSYM/
+tarpaulin-report.html
+lcov.info
+
+# 编辑器与系统文件
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+*.iml
+.history/
+
+# 本地运行时产物（ACE 证据/请求不随仓分发）
+/.ace-*/
+/requests/
