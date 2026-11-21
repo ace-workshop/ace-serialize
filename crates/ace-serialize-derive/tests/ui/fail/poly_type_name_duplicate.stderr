@@ -1,0 +1,8 @@
+error: ace: duplicate type_name "Same"
+  --> tests/ui/fail/poly_type_name_duplicate.rs:9:5
+   |
+ 9 | /     #[ace(type_name = "Same")]
+10 | |     Second {
+11 | |         value: u8,
+12 | |     },
+   | |_____^

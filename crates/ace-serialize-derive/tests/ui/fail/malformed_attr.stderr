@@ -1,0 +1,5 @@
+error: ace: expected `=`
+ --> tests/ui/fail/malformed_attr.rs:5:16
+  |
+5 |     #[ace(order)]
+  |                ^

@@ -1,0 +1,5 @@
+error: ace: owned RefCell/RwLock unsupported; use Rc<RefCell<T>> or Arc<RwLock<T>>
+ --> tests/ui/fail/owned_refcell.rs:6:12
+  |
+6 |     value: RefCell<u32>,
+  |            ^^^^^^^^^^^^

@@ -1,0 +1,5 @@
+error: ace: order 3 is reserved
+ --> tests/ui/fail/reserved_conflict.rs:7:5
+  |
+7 |     value: u32,
+  |     ^^^^^

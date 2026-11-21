@@ -1,0 +1,5 @@
+error: ace: attribute in invalid position
+ --> tests/ui/fail/enum_variant_attr_position.rs:6:5
+  |
+6 |     #[ace(default = One)]
+  |     ^^^^^^^^^^^^^^^^^^^^^

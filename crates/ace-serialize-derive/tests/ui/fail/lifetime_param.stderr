@@ -1,0 +1,5 @@
+error: ace: 不支持生命周期参数
+ --> tests/ui/fail/lifetime_param.rs:4:17
+  |
+4 | struct Borrowed<'a> {
+  |                 ^^

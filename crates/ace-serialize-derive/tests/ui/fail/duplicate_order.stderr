@@ -1,0 +1,5 @@
+error: ace: duplicate order 1
+ --> tests/ui/fail/duplicate_order.rs:8:5
+  |
+8 |     second: u32,
+  |     ^^^^^^

@@ -1,0 +1,5 @@
+error: ace: order out of range
+ --> tests/ui/fail/order_above_i32_max.rs:5:19
+  |
+5 |     #[ace(order = 2147483648)]
+  |                   ^^^^^^^^^^

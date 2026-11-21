@@ -1,0 +1,80 @@
+error[E0277]: ace: Option<Option<T>> is not supported
+ --> tests/ui/fail/option_option_alias.rs:6:10
+  |
+6 | #[derive(AceSerialize)]
+  |          ^^^^^^^^^^^^ ace: this Option field's inner type is itself an Option
+  |
+  = help: the trait `ace_serialize::schema::NonOptional` is not implemented for `std::option::Option<i32>`
+  = note: ace: an Option field may nest at most one Option; nested Option has no wire mapping (FR-T02)
+  = help: the following other types implement trait `ace_serialize::schema::NonOptional`:
+            &str
+            BTreeMap<K, V>
+            Box<T>
+            DateTime
+            DateTimeOffset
+            Guid
+            Holder
+            IntPtr
+          and $N others
+  = note: required for `std::option::Option<std::option::Option<i32>>` to implement `AceDecodeCyclic`
+  = note: this error originates in the derive macro `AceSerialize` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: ace: Option<Option<T>> is not supported
+ --> tests/ui/fail/option_option_alias.rs:8:12
+  |
+8 |     value: Nested,
+  |            ^^^^^^ ace: this Option field's inner type is itself an Option
+  |
+  = help: the trait `ace_serialize::schema::NonOptional` is not implemented for `std::option::Option<i32>`
+  = note: ace: an Option field may nest at most one Option; nested Option has no wire mapping (FR-T02)
+  = help: the following other types implement trait `ace_serialize::schema::NonOptional`:
+            &str
+            BTreeMap<K, V>
+            Box<T>
+            DateTime
+            DateTimeOffset
+            Guid
+            Holder
+            IntPtr
+          and $N others
+  = note: required for `std::option::Option<std::option::Option<i32>>` to implement `AceDecodeCyclic`
+
+error[E0277]: ace: Option<Option<T>> is not supported
+ --> tests/ui/fail/option_option_alias.rs:8:12
+  |
+8 |     value: Nested,
+  |            ^^^^^^ ace: this Option field's inner type is itself an Option
+  |
+  = help: the trait `ace_serialize::schema::NonOptional` is not implemented for `std::option::Option<i32>`
+  = note: ace: an Option field may nest at most one Option; nested Option has no wire mapping (FR-T02)
+  = help: the following other types implement trait `ace_serialize::schema::NonOptional`:
+            &str
+            BTreeMap<K, V>
+            Box<T>
+            DateTime
+            DateTimeOffset
+            Guid
+            Holder
+            IntPtr
+          and $N others
+  = note: required for `std::option::Option<std::option::Option<i32>>` to implement `AceEncode`
+
+error[E0277]: ace: Option<Option<T>> is not supported
+ --> tests/ui/fail/option_option_alias.rs:8:12
+  |
+8 |     value: Nested,
+  |            ^^^^^^ ace: this Option field's inner type is itself an Option
+  |
+  = help: the trait `ace_serialize::schema::NonOptional` is not implemented for `std::option::Option<i32>`
+  = note: ace: an Option field may nest at most one Option; nested Option has no wire mapping (FR-T02)
+  = help: the following other types implement trait `ace_serialize::schema::NonOptional`:
+            &str
+            BTreeMap<K, V>
+            Box<T>
+            DateTime
+            DateTimeOffset
+            Guid
+            Holder
+            IntPtr
+          and $N others
+  = note: required for `std::option::Option<std::option::Option<i32>>` to implement `AceDecode`

@@ -1,0 +1,17 @@
+error: ace: unsupported field type; u128 is not in the FR-T01 supported set
+ --> tests/ui/fail/unsupported_std_type.rs:6:11
+  |
+6 |     wide: u128,
+  |           ^^^^
+
+error: ace: unsupported field type; HashMap is not in the FR-T01 supported set
+ --> tests/ui/fail/unsupported_std_type.rs:7:17
+  |
+7 |     map: Option<HashMap<u32, u32>>,
+  |                 ^^^^^^^^^^^^^^^^^
+
+error: ace: unsupported field type; BTreeSet is not in the FR-T01 supported set
+ --> tests/ui/fail/unsupported_std_type.rs:8:14
+  |
+8 |     set: Vec<BTreeSet<u8>>,
+  |              ^^^^^^^^^^^^

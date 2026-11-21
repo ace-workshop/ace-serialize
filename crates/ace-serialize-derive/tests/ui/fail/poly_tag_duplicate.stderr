@@ -1,0 +1,8 @@
+error: ace: duplicate tag 1
+  --> tests/ui/fail/poly_tag_duplicate.rs:9:5
+   |
+ 9 | /     #[ace(tag = 1)]
+10 | |     Second {
+11 | |         value: u8,
+12 | |     },
+   | |_____^

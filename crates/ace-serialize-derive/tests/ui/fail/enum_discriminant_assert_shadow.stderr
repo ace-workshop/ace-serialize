@@ -1,0 +1,5 @@
+error[E0080]: evaluation panicked: ace: unmarked integer enum discriminant must fit in i32; add #[repr(i64)] or #[repr(u64)] to the enum
+  --> tests/ui/fail/enum_discriminant_assert_shadow.rs:10:10
+   |
+10 | #[derive(AceSerialize)]
+   |          ^^^^^^^^^^^^ evaluation of `_::_` failed here

@@ -1,0 +1,5 @@
+error: ace: unsupported field type; isize and usize have no fixed wire width
+ --> tests/ui/fail/isize_field.rs:5:12
+  |
+5 |     value: isize,
+  |            ^^^^^

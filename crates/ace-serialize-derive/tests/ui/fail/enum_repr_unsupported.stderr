@@ -1,0 +1,11 @@
+error: ace: unsupported enum repr; integer enums allow only i8, i16, i32, i64, u8, u16, u32, u64
+ --> tests/ui/fail/enum_repr_unsupported.rs:4:8
+  |
+4 | #[repr(C)]
+  |        ^
+
+error: ace: unsupported enum repr; integer enums allow only i8, i16, i32, i64, u8, u16, u32, u64
+  --> tests/ui/fail/enum_repr_unsupported.rs:11:8
+   |
+11 | #[repr(isize)]
+   |        ^^^^^

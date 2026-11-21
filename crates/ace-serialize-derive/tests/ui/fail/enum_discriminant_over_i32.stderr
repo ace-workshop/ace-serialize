@@ -1,0 +1,5 @@
+error: ace: unmarked integer enum discriminant must fit in i32; add #[repr(i64)] or #[repr(u64)] to the enum
+ --> tests/ui/fail/enum_discriminant_over_i32.rs:6:5
+  |
+6 |     Big = 4_294_967_296,
+  |     ^^^^^^^^^^^^^^^^^^^

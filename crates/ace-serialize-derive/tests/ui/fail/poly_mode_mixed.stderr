@@ -1,0 +1,8 @@
+error: ace: polymorphic enum variants must all use #[ace(tag = n)] or all use #[ace(type_name = "...")]; the two modes cannot be mixed
+  --> tests/ui/fail/poly_mode_mixed.rs:9:5
+   |
+ 9 | /     #[ace(type_name = "Text")]
+10 | |     Text {
+11 | |         value: u8,
+12 | |     },
+   | |_____^

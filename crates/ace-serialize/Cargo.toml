@@ -1,0 +1,11 @@
+[package]
+name = "ace-serialize"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+std = []
+
+[dev-dependencies]
+ace-serialize-derive = { path = "../ace-serialize-derive" }

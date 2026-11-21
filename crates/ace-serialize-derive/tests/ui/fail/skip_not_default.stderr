@@ -1,0 +1,119 @@
+error[E0277]: ace: skipped field type must implement Default
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ this #[ace(skip)] field type does not implement Default
+  |
+  = help: the trait `Default` is not implemented for `NoDefault`
+  = note: #[ace(skip)] fields are constructed with Default::default()
+note: required for `NoDefault` to implement `<Skipped as AceDecode>::ace_decode::{closure#0}::AceSkipDefault`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^
+note: required by a bound in `<Skipped as AceDecode>::ace_decode::{closure#0}::skip_default`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ required by this bound in `skip_default`
+help: consider annotating `NoDefault` with `#[derive(Default)]`
+  |
+3 + #[derive(Default)]
+4 | struct NoDefault(u32);
+  |
+
+error[E0277]: ace: skipped field type must implement Default
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ this #[ace(skip)] field type does not implement Default
+  |
+  = help: the trait `Default` is not implemented for `NoDefault`
+  = note: #[ace(skip)] fields are constructed with Default::default()
+note: required for `NoDefault` to implement `<Skipped as AceDecode>::ace_decode_into::{closure#0}::AceSkipDefault`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^
+note: required by a bound in `<Skipped as AceDecode>::ace_decode_into::{closure#0}::skip_default`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ required by this bound in `skip_default`
+help: consider annotating `NoDefault` with `#[derive(Default)]`
+  |
+3 + #[derive(Default)]
+4 | struct NoDefault(u32);
+  |
+
+error[E0277]: ace: skipped field type must implement Default
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ this #[ace(skip)] field type does not implement Default
+  |
+  = help: the trait `Default` is not implemented for `NoDefault`
+  = note: #[ace(skip)] fields are constructed with Default::default()
+note: required for `NoDefault` to implement `<Skipped as AceElement>::decode_element::{closure#0}::AceSkipDefault`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^
+note: required by a bound in `<Skipped as AceElement>::decode_element::{closure#0}::skip_default`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ required by this bound in `skip_default`
+help: consider annotating `NoDefault` with `#[derive(Default)]`
+  |
+3 + #[derive(Default)]
+4 | struct NoDefault(u32);
+  |
+
+error[E0277]: ace: skipped field type must implement Default
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ this #[ace(skip)] field type does not implement Default
+  |
+  = help: the trait `Default` is not implemented for `NoDefault`
+  = note: #[ace(skip)] fields are constructed with Default::default()
+note: required for `NoDefault` to implement `<Skipped as AceElement>::decode_element_into::{closure#0}::AceSkipDefault`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^
+note: required by a bound in `<Skipped as AceElement>::decode_element_into::{closure#0}::skip_default`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ required by this bound in `skip_default`
+help: consider annotating `NoDefault` with `#[derive(Default)]`
+  |
+3 + #[derive(Default)]
+4 | struct NoDefault(u32);
+  |
+
+error[E0277]: ace: skipped field type must implement Default
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ this #[ace(skip)] field type does not implement Default
+  |
+  = help: the trait `Default` is not implemented for `NoDefault`
+  = note: #[ace(skip)] fields are constructed with Default::default()
+note: required for `NoDefault` to implement `<Skipped as AceDecodeCyclic>::build_from_plan::AceSkipDefault`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^
+note: required by a bound in `<Skipped as AceDecodeCyclic>::build_from_plan::skip_default`
+ --> tests/ui/fail/skip_not_default.rs:9:12
+  |
+9 |     other: NoDefault,
+  |            ^^^^^^^^^ required by this bound in `skip_default`
+help: consider annotating `NoDefault` with `#[derive(Default)]`
+  |
+3 + #[derive(Default)]
+4 | struct NoDefault(u32);
+  |

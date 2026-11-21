@@ -1,0 +1,5 @@
+error: ace: tag must be in 0..=65534; 65535 is reserved for the type_name escape
+ --> tests/ui/fail/poly_tag_escape.rs:5:17
+  |
+5 |     #[ace(tag = 65535)]
+  |                 ^^^^^

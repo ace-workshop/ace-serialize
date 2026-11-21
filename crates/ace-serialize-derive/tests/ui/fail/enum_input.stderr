@@ -1,0 +1,5 @@
+error: ace: 仅支持无载荷整数枚举与具名字段结构体
+ --> tests/ui/fail/enum_input.rs:4:6
+  |
+4 | enum Choice {
+  |      ^^^^^^

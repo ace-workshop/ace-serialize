@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/ace-serialize", "crates/ace-serialize-derive", "crates/ace-serialize-ffi"]
+resolver = "2"

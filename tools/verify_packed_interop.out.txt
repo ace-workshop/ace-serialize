@@ -1,0 +1,15 @@
+official_sparse: pack/unpack PASS
+official_zero: pack/unpack PASS
+official_nonzero: pack/unpack PASS
+zero_8: byte_identical
+zero_16: byte_identical
+zero_257_words: byte_identical
+nonzero_word: byte_identical
+nonzero_24: byte_identical
+nonzero_256_words: byte_identical
+nonzero_257_words: byte_identical
+partial_13: byte_identical
+pseudorandom_1000: byte_identical
+synthetic_conservative: encoding_discretion rust_len=4 python_len=258 length_delta=+254 first_diff=1
+PASS
+exit code: 0

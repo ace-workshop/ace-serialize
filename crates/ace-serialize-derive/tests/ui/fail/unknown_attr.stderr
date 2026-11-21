@@ -1,0 +1,5 @@
+error: ace: unknown attribute
+ --> tests/ui/fail/unknown_attr.rs:5:11
+  |
+5 |     #[ace(rename = "other")]
+  |           ^^^^^^

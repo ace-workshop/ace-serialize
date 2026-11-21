@@ -1,0 +1,5 @@
+error: ace: unknown default variant
+ --> tests/ui/fail/enum_default_unknown.rs:5:17
+  |
+5 | #[ace(default = Missing)]
+  |                 ^^^^^^^
